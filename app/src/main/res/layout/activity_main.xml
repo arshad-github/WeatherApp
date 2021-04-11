@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nameOfCity"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:text="@string/loading"
+            tools:text="Johannesburg"
+            android:textColor="#ffffff"
+            android:layout_marginTop="64dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#ffffff"
+            android:text=""
+            tools:text="30°C"
+            android:layout_marginTop="128dp">
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/mainWeather"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:text=""
+            tools:text="Sunny"
+            android:layout_marginTop="128dp">
+        </TextView>
+
+
+
+        <TextView
+            android:id="@+id/weatherDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:text=""
+            tools:text="Clear Sky"
+            android:layout_marginTop="16dp">
+        </TextView>
+
+        <Button
+            android:id="@+id/refreshButton"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/refresh"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp">
+        </Button>
+
+    </LinearLayout>
+
+</RelativeLayout>
